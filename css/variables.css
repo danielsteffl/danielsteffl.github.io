@@ -1,0 +1,16 @@
+:root {
+    --color-background: #070707;
+    --color-surface: #111113;
+    --color-text: #ffffff;
+    --color-text-muted: #d4d4d8;
+    --color-text-soft: #f4f4f5;
+    --color-text-subtle: #7d857f;
+    --color-text-brand: #8c948e;
+    --color-scrollbar-track: #09090b;
+    --color-scrollbar-thumb: #27272a;
+    --font-family-base: "Plus Jakarta Sans", sans-serif;
+    --content-width: 100rem;
+    --page-padding: 0.5rem;
+    --transition-duration: 0.3s;
+    --transition-timing-function: ease;
+}

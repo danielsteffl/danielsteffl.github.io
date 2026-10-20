@@ -1,20 +1,127 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Osobní portfolio">
+    <meta name="description" content="Osobní portfolio – Daniel Šteffl">
     <meta name="author" content="Daniel Šteffl">
 
     <title>Daniel Šteffl</title>
 
-    <!-- CSS -->
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- JavaScript -->
+
     <script src="js/main.js" defer></script>
 </head>
+
 <body>
 
+    <header class="site-header">
+        <a href="#home" class="site-header_logo" aria-label="Home">
+            <img src="./assets/icons/logo-white.svg" alt="Logo">
+        </a>
+
+        <nav class="site-header_navigation" aria-label="Primary navigation">
+            <a href="#home" class="site-header_navigation-link">Domů</a>
+            <a href="#about" class="site-header_navigation-link">O mně</a>
+            <a href="#services" class="site-header_navigation-link">Služby</a>
+            <a href="#works" class="site-header_navigation-link">Projekty</a>
+        </nav>
+
+        <div class="site-header_contact">
+            <a href="#contact" class="button">Kontakt</a>
+        </div>
+
+        <button id="menu-btn" class="site-header_menu-button" type="button" aria-label="Toggle navigation"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <nav id="mobile-menu" class="mobile-navigation" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-navigation_link">Domů</a>
+            <a href="#about" class="mobile-navigation_link">O mně</a>
+            <a href="#services" class="mobile-navigation_link">Služby</a>
+            <a href="#works" class="mobile-navigation_link">Projekty</a>
+            <a href="#contact" class="button mobile-navigation_contact-link">Kontakt</a>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section id="home" class="hero">
+
+            <div class="hero_background" aria-hidden="true">
+                <img class="hero_image" src="assets/images/image.png" alt="Hlavní pozadí">
+                <div class="hero_overlay hero_overlay--horizontal"></div>
+                <div class="hero_overlay hero_overlay--vertical"></div>
+            </div>
+
+            <div class="hero_content">
+                <p class="hero_subtitle">Daniel Šteffl</p>
+                <h1 class="hero_title">
+                    <span class="hero_title-line">Designer &amp;</span>
+                    <span class="hero_title-line">Developer</span>
+                </h1>
+                <p class="hero_description">
+                    Propojuji grafický design s IT vývojem. Rád se učím nové technologie a vytvářím funkční, přehledné a
+                    hezké digitální produkty.
+                </p>
+                <div class="hero_actions">
+                    <a href="#works" class="button hero_cta">
+                        <span>Zobrazit portfolio</span>
+                        <svg class="hero_cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="hero_secondary-cta">Napište mi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="socials" aria-labelledby="socials-heading">
+            <h2 id="socials-heading" class="socials_heading">Prohlédněte si mou práci a spojte se se mnou</h2>
+            <ul class="socials_list">
+                <li class="socials_item">
+                    <a href="https://github.com/danielsteffl" class="socials_link" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="socials_icon" aria-hidden="true">
+                            <img src="./assets/icons/github-icon.svg" alt="GitHub">
+                        </span>
+                        GitHub
+                    </a>
+                </li>
+                <li class="socials_item">
+                    <a href="https://www.behance.net/danielteffl" class="socials_link" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="socials_icon" aria-hidden="true">
+                            <img src="./assets/icons/behance-icon.svg" alt="Behance">
+                        </span>
+                        Behance
+                    </a>
+                </li>
+                <li class="socials_item">
+                    <a href="https://www.instagram.com/mefissek/" class="socials_link" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="socials_icon" aria-hidden="true">
+                            <img src="./assets/icons/instagram-icon.svg" alt="Instagram">
+                        </span>
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
+
 </html>
